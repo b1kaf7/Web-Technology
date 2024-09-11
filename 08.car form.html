@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Car Information Form</title>
+</head>
+
+<body>
+    <h2>Personal Car Information</h2>
+    <form action="#" method="post">
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your Fullname" required><br><br>
+
+        <label for="city">Current City:</label>
+        <input type="text" id="city" name="city" placeholder="Where is your city" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="9*********" pattern="9[0-9]{9}" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>Male
+        <input type="radio" id="female" name="gender" value="Female" required>Female<br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" max="<?php echo date('Y-m-d'); ?>" required><br><br>
+
+        <label for="car_company">Choose Car Company:</label>
+        <select id="car_company" name="car_company" required>
+            <optgroup label="American">
+                <option value="Jeep">Jeep</option>
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+            </optgroup>
+            <optgroup label="Japanese">
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Nissan">Nissan</option>
+            </optgroup>
+            <optgroup label="German">
+                <option value="BMW">BMW</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Audi">Audi</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="info">Additional Information:</label><br>
+        <textarea id="info" name="info" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and policy</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

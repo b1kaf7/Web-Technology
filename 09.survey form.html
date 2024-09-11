@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h2>Survey Form</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email" style="color: blue;">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="first_name" style="color: blue;">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="last_name" style="color: blue;">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Geographic Information</legend>
+            <label for="state" style="color: blue;">State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="zipcode" style="color: blue;">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" required><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <input type="checkbox" id="websearch" name="source" value="websearch">
+            <label for="websearch">Websearch</label><br>
+
+            <input type="checkbox" id="facebook" name="source" value="facebook">
+            <label for="facebook">Facebook</label><br>
+
+            <input type="checkbox" id="twitter" name="source" value="twitter">
+            <label for="twitter">Twitter</label><br>
+
+            <input type="checkbox" id="email_message" name="source" value="email_message">
+            <label for="email_message">Email message</label><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Any Suggestions</legend>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea>
+        </fieldset><br>
+
+        <p>Thank you for taking our survey.</p>
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
