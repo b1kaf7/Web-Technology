@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sabin Neupane">
+    <title>Pseudo-Class Selector</title>
+    <style>
+        a[target="_self"]:link {
+            color: red;
+        }
+
+        a[target="_blank"]:visited {
+            color: blue;
+        }
+
+        a[target="_top"]:hover {
+            color: green;
+        }
+
+        input[name="email"]:focus {
+            color: aqua;
+        }
+
+        input[name="name"]:active {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Pseudo-class Selectors</h1>
+    <p>Here are some example of pseudo-class selector</p>
+    <ul>
+        <li><a href="#" target="_self">Home</a></li>
+        <li><a href="#" target="_blank">Contact</a></li>
+        <li><a href="#" target="_top">About</a></li>
+    </ul>
+    <label for="name">Name:</label>
+    <input type="text" name="name"><br>
+    <label for="email">Email</label>
+    <input type="text" name="email"><br>
+    <input type="submit" value="Submit">
+    <p>Hover over the links to see the hover pseudo-class in action</p>
+    <p>Fill in the form fields to see the focus and active pseudo-classin action</p>
+</body>
+
+</html>

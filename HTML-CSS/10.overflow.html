@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sabin Neupane">
+    <title>Overflow float and clear</title>
+    <link rel="stylesheet" href="10.overflow.css">
+</head>
+
+<body>
+    <div class="container ">
+        <h1>Overflow: visible</h1>
+        <div class="overflow visible">
+            <p>This content overflows the container</p>
+        </div>
+
+        <h1>Overflow: hidden</h1>
+        <div class="overflow hidden">
+            <p>This content is hidden outside the container</p>
+        </div>
+
+        <h1>Overflow: scroll</h1>
+        <div class="overflow scroll">
+            <p>This content is scrollable within the container</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h1>Clear: right</h1>
+        <div class="clear">
+            <p class="rightfloat">Floated right</p>
+            <p class="clear-right">This content is cleared on the right</p>
+        </div>
+
+        <h1>Clear: both</h1>
+        <div class="clear">
+            <p class="leftfloat">Floated left</p>
+            <p class="rightfloat">Floated right</p>
+            <p class="clear-both">This content is cleared on both sides</p>
+        </div>
+    </div>
+</body>
+
+</html>

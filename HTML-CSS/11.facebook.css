@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px;
+    font-family: 'sans serif', Klavika;
+}
+
+.login, .signup {
+    width: 45%;
+    margin: 10px;
+}
+
+.login {
+    width: 250px;
+    padding: 0 10px;
+}
+
+h1 {
+    color: #4267B2;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#login {
+    border: 1px solid #898F9C;
+    border-radius: 5px;
+    box-shadow: 1px 1px #898F9C;
+    text-align: center;
+}
+
+#login input {
+    margin-top: 7px;
+    width: 230px;
+    height: 28px;
+}
+
+p[title="login"] {
+    background-color: #5890FF;
+    color: white;
+    width: 230px;
+    height: 28px;
+    margin: 10px;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p[title="newaccount"] {
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 28px;
+    margin: 10px 50px;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+p[title="newaccount"] a {
+    color: white;
+}
+
+.signup {
+    width: 350px;
+    padding: 0 10px;
+}
+
+#signup {
+    padding: 5px;
+    border: 1px solid #898F9C;
+    border-radius: 5px;
+    box-shadow: 1px 1px #898F9C;
+}
+
+p[title="intro"] {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: smaller;
+    text-align: center;
+}
+
+#signup input[type="text"] {
+    margin-top: 0px;
+    width: 160px;
+    height: 28px;
+}
+
+#signup input[name="email"], #signup input[name="password"] {
+    margin-top: 7px;
+    width: 330px;
+    height: 28px;
+}
+
+select {
+    margin: 10px 0;
+    width: 100px;
+    height: 25px;
+}
+
+.privacy {
+    font-size: x-small;
+}
+
+p[title="signup"] {
+    background-color: green;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 28px;
+    margin: 10px 110px;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+a[title="login"] {
+    margin: 10px 80px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sabin Neupane">
+    <title>Pseudo Element Selector</title>
+    <style>
+        div::first-letter {
+            color: red;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        div::before {
+            content: "Hi!,...";
+            color: blue;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        div::first-line {
+            color: green;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        div::after {
+            content: "....bye!";
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        ::placeholder {
+            color: red;
+            font-style: italic;
+        }
+        ::selection {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements</h1>
+    <div>
+            This is simple <br>
+            paragraph inside a div. It demonstrates the use of pseudo- <br>
+            elements to style content before, after, and within the text. <br>
+    
+    </div>
+    <label for="text">Enter text:</label>
+    <input type="text" placeholder="Type something">
+    <p>Select some text to see the ::selection effect</p>
+</body>
+</html>
