@@ -1,0 +1,48 @@
+body {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: navigation;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.ads{
+    grid-area: ads;
+}
+.footer{
+    grid-area: footer;
+}
+.ads, .footer, .header, .main, .nav, .sidebar {
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 15px;
+}
+
+/*Mobile view*/
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "sidebar"
+        "ads"
+        "footer";
+    }
+
+    .main {
+        height: 200px;
+    }
+}

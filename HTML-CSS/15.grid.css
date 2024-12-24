@@ -1,0 +1,81 @@
+body {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: navigation;
+}
+.main {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.ads{
+    grid-area: ads;
+}
+.footer{
+    grid-area: footer;
+}
+.ads, .footer, .header, .main, .nav, .sidebar {
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 15px;
+}
+
+/*Desktop view*/
+@media screen and (min-width: 962px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "sidebar navigation ads"
+        "sidebar main ads"
+        "footer footer footer";
+    }
+
+    .main {
+        height: 200px;
+    }
+}
+
+/*Tablet View*/
+@media screen and (min-width: 600px) and (max-width: 982px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "header header"
+        "navigation navigation"
+        "sidebar main"
+        "ads footer";
+    }
+
+    .main {
+        height: 200px;
+    }
+}
+/*Mobile view*/
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "sidebar"
+        "ads"
+        "footer";
+    }
+
+    .main {
+        height: 200px;
+    }
+}
