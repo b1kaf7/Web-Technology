@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Properties</title>
+    <style>
+        .content-box-sizing {
+            background-color: rgb(255, 255, 255);
+            box-sizing: content-box;
+            box-decoration-break: clone;
+            width: 400px;
+            height: 100px;
+            padding: 40px;
+            border: 10px solid green;
+        }
+
+        .border-box-sizing {
+            background-color: rgb(255, 255, 255);
+            box-decoration-break: slice;
+            box-sizing: border-box;
+            width: 400px;
+            height: 200px;
+            padding: 40px;
+            border: 10px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box sizing: content-box</h1>
+    <div class="content-box-sizing">
+        <h4>(width and height only apply to the content of the element)</h4>
+        <p>This div has a width of 400px, but full sidth is 400px + 20px (left and right border) + 40px (left and right
+            padding) = 460px</p>
+    </div>
+
+    <h1>box-sizing: border-box</h1>
+    <div class="border-box-sizing">
+        <h4>(width and height apply to all the parts of element: content, padding and border)</h4>
+        <p>Here, the full width of the box is 400px, including content, padding and border</p>
+    </div>
+</body>
+
+</html>

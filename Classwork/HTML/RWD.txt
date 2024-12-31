@@ -1,0 +1,50 @@
+Responsive Web Design (RWD):
+	-> Approach to web design that makes web pages render well on a variety of devices and screen sizes.
+		
+		#Benefits:
+				-> improved user experience.
+				-> Better SEO
+				-> Cost-effective
+				-> Future Proof
+#Best Practise for RWL:
+			-> Use a mobile-first approach.
+			-> Prioritize content.
+			-> Optimize images.
+			-> Test on different devices.
+
+visit websites: starbucks, Airbnb, New York Times.
+
+Responsive Web Design Frameworks:
+			Consists: -> Grid System
+				  -> Pre-built templates
+				  -> Components
+				  -> Responsive topography
+
+Benefits:
+	-> Saves time & money
+	-> Consistent Design
+	-> faster development
+	-> easy maintenance
+
+e.g.:
+	-> Bootstrap
+	-> Semantic VI
+	-> Tailwind CSS
+	-> Semantic UI React, etc
+
+#Media Queries:
+		-> Crucial aspects of responsive web design.
+		-> allows developer to create responsive layouts that adjust to different screen size and devices.
+	
+	Syntax:
+		a. media screen and (min-width: 601px) {
+			//CSS
+			}
+		b. media screen and (min-width: 601px) and 
+		   		    (max-width: 900px) {
+			//CSS
+			}
+		c. Media screen and (min-width: 901px) {
+			//CSS
+			}
+		

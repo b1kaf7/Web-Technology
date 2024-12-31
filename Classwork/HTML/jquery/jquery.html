@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            // jQuery code to toggle paragraph visibility
+            $("#toggleButton").click(function () {
+                $("#demo").toggle();
+                // $("#demo").slideUp();
+            });
+        });
+        // toggle:function(e){return"boolean"==typeof e?e?this.show():this.hide():this.each(function(){ae(this)?S(this).show():S(this).hide()})}});
+    </script>
+</head>
+
+<body>
+    <button id="toggleButton">Toggle Paragraph</button>
+    <p id="demo">This is a paragraph.</p>
+
+</body>
+
+</html>

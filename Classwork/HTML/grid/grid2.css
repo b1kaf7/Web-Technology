@@ -1,0 +1,72 @@
+/* Default styles for larger screens */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* Three columns layout */
+    grid-template-rows: auto auto 1fr auto; /* Auto for header and footer, 1fr for content */
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "sidebar main ads"
+        "ads ads ads"
+        "footer footer footer";
+}
+
+/* Header and footer styling */
+header, footer {
+    background-color: #4CAF50; /* Example background color */
+    color: white; /* Example text color */
+    padding: 1rem; /* Example padding */
+    text-align: center; /* Centered text */
+}
+
+#Sidebar {
+    background-color: #f2f2f2; /* Example background color */
+    padding: 1rem;
+}
+
+#Ads {
+    background-color: #f2f2f2; /* Example background color */
+    padding: 1rem;
+}
+
+/* Main content styling */
+main {
+    background-color: #ffffff; /* Example background color */
+    padding: 1rem;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333; /* Example background color */
+    color: white; /* Example text color */
+    padding: 1rem;
+    text-align: center; /* Centered text */
+}
+
+/* Responsive styles for phones */
+@media screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        grid-template-rows: auto auto auto auto auto; /* Auto for all rows */
+        grid-template-areas:
+            "header"
+            "nav"
+            "sidebar"
+            "main"
+            "ads"
+            "footer";
+    }
+    
+    header, footer, nav, #Sidebar, #Ads, main {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+}
+nav a{
+    color: white;
+    padding-inline: 20px;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    color: red;
+}

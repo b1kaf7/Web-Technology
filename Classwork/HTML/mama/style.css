@@ -1,0 +1,23 @@
+.container{
+    background-color:yellowgreen;
+    height: 900px;
+    width: 600px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+.item{
+    background-color: red;
+    height: 12px;
+    width: 90px;
+    display: grid;
+   grid-column-start:1 ;
+   grid-column-end: 3;
+   gap: 30px;
+   margin:20px;
+   padding: 90px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Animation</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    #car {
+      position: relative;
+      margin-top: 50px;
+    }
+
+    #controls {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+
+    #path {
+      background-color: black;
+      width: 100%;
+      height: 0.5cm;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="car">
+    <img src="car.png" alt="Car" height="100px" width="200px">
+  </div>
+
+  <div id="path"></div>
+
+  <div id="controls">
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <button id="reverseButton">Reverse</button>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      var car = $('#car');
+
+      $('#startButton').click(function () {
+        car.animate({ left: '+=500px' }, 'slow');
+      });
+
+      $('#stopButton').click(function () {
+        car.stop();
+      });
+
+      $('#reverseButton').click(function () {
+        car.animate({ left: '-=500px' }, 'slow');
+      });
+    });
+  </script>
+</body>
+
+</html>

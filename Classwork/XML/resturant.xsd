@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="restaurant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="restaurantName" type="xs:string"/>
+                <xs:element name="location" type="xs:string"/>
+                <xs:element name="contactNumber" type="xs:string"/>
+                <xs:element name="openingHours" type="xs:string"/>
+
+                <xs:element name="category" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="categoryName" type="xs:string"/>
+                            <xs:element name="foodItem" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="itemName" type="xs:string"/>
+                                        <xs:element name="price" type="xs:decimal"/>
+                                        <xs:element name="description" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="calories" type="xs:integer" minOccurs="0"/>
+                                        <xs:element name="vegetarian" type="xs:boolean" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="spicyLevel" type="xs:integer" use="optional"/>
+                                    <xs:attribute name="available" type="xs:boolean" default="true"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="chefSpecials" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="specialItem" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="itemName" type="xs:string"/>
+                                        <xs:element name="price" type="xs:decimal"/>
+                                        <xs:element name="limitedAvailability" type="xs:boolean"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="promotions" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="promotion" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="promoName" type="xs:string"/>
+                                        <xs:element name="discount" type="xs:decimal"/>
+                                        <xs:element name="validTill" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

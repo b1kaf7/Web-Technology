@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+}
+
+.scroll {
+    background-image: url('https://wallpapers.com/images/high/white-paper-airplanes-iphone-eyzgprzfyv2mz55k.webp');
+    background-attachment: scroll;
+}
+
+.fixed {
+    background-image: url('https://wallpapers.com/images/high/white-paper-airplanes-iphone-eyzgprzfyv2mz55k.webp'); 
+    background-attachment: fixed;
+}
+
+.repeat {
+    background-image: url('https://t4.ftcdn.net/jpg/05/31/96/37/240_F_531963724_C9HHwIYrpgtysV5Qr1WBNwzXp8hA4UAI.jpg'); 
+    background-repeat: repeat;
+    background-size: 200px 200px; 
+}
+
+.scroll, .fixed {
+    height: 800px;
+}

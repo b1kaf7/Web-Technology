@@ -1,0 +1,30 @@
+header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    /* Center the list items */
+}
+
+nav ul li a{
+    color: green;
+    border-radius: 2px ;
+    display: flex ;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    margin: 5px ;
+    background-color: rgb(34, 248, 14);
+    border-radius: 5px ;
+    font-size: 15pt;
+    text-decoration: none;
+}
+nav ul li :hover{
+    color: rgb(255, 255, 255);
+}

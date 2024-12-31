@@ -1,0 +1,152 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.left-section h1 {
+    color: #1877f2;
+    font-size: 50px;
+    margin: 0;
+}
+
+.left-section p {
+    font-size: 24px;
+    color: #1c1e21;
+    margin-top: 20px;
+}
+
+.right-section {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    padding: 14px 16px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+}
+
+.login-box button {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.forgotten-password {
+    color: #1877f2;
+    text-align: center;
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #dddfe2;
+}
+
+.create-account {
+    background-color: #42b72a;
+    color: #fff;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.create-page {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1c1e21;
+}
+
+.create-page a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f0f2f5;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #737373;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #dddfe2;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .languages a {
+    margin-right: 10px;
+    color: #737373;
+    text-decoration: none;
+}
+
+footer .footer-links {
+    margin-top: 10px;
+}
+
+footer .footer-links a {
+    margin-right: 10px;
+    color: #737373;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer .meta {
+    margin-top: 20px;
+    color: #737373;
+}

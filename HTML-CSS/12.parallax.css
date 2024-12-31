@@ -21,28 +21,29 @@ span.border {
 
 .parallax1 {
     height: 100%;
-    background-image: url(bg1.jpeg);
+    height: 60%;
+    background-image: url(12.m4.jpeg);
 }
 
 .parallax2 {
     width: 100%;
-    height: 100%;
-    background-image: url(bg2.jpeg);
+    height: 60%;
+    background-image: url(12.glc.jpg);
 }
 
 .parallax3 {
     width: 100%;
     height: 60%;
-    background-image: url(bg3.jpeg);
+    background-image: url(12.chiron.jpg);
 }
 
 .parallax4 {
     min-height: 100%;
-    background-image: url(bg4.jpeg);
+    background-image: url(12.cool.jpg);
 }
 .parallax1,.parallax2,.parallax3,.parallax4{
     position: relative;
-    opacity: 0.65;
+    opacity: 0.75;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

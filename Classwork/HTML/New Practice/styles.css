@@ -1,0 +1,19 @@
+header{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: large;
+    background-color: yellow;
+}
+
+p{
+    text-align: justify;
+}
+#nav1{
+    font-size: 25px; 
+    a{
+        text-decoration: none;
+        color:blue;
+        background-color: rgb(255, 255, 255);
+    }
+}
+

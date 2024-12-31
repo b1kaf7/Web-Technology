@@ -1,0 +1,10 @@
+<bookstore>
+    <book category= "Childeren">
+        <title>Harry Potter</title>
+        <author>J.K. Rowling</author>
+    </book>
+    <book category="WEB">
+        <title>Learning XML</title>
+        <author>Mandan Bhandari</author>
+    </book>
+</bookstore>
